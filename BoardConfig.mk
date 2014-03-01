@@ -26,7 +26,9 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/honami/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/honami/bluetooth
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_rhine_honami_row_defconfig
+TARGET_KERNEL_CONFIG := pimped_rhine_honami_row_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-arm-eabi-4.7/bin/arm-eabi-
+TARGET_GCC_VERSION := 4.7
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
